@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta 
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge">
+  <meta 
+    name="theme-color" 
+    content="#fff" 
+    id="theme-color">
+  <meta 
+    name="description" 
+    content="Hexo">
+  <link 
+    rel="icon" 
+    href="/favicon.jpg">
+  <title>面试ing</title>
+  
+    
+      <meta 
+        property="og:title" 
+        content="面试ing">
+    
+    
+      <meta 
+        property="og:url" 
+        content="http://example.com/2025/04/11/%E9%9D%A2%E8%AF%95ing/index.html">
+    
+    
+      <meta 
+        property="og:img" 
+        content="/author.ico">
+    
+    
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2025-04-11">
+      <meta 
+        property="og:article:modified_time" 
+        content="2025-04-12">
+      <meta 
+        property="og:article:author" 
+        content="XLM不是衣服尺码">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="面试">
+        
+      
+    
+  
+  
+  <link rel="preload" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css" as="style" >
+  <link rel="preload" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css" as="style" >
+  <link rel="preload" href="/css/main.css" as="style" >
+  
+  <link rel="modulepreload" href="//instant.page/5.1.0">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1946621_i1kgafibvw.css">
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
+  
+  
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
+  
+  <script>
+    function loadScript(url, cb) {
+      var script = document.createElement('script');
+      script.src = url;
+      if (cb) script.onload = cb;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+    function loadCSS(href, data, attr) {
+      var sheet = document.createElement('link');
+      sheet.ref = 'stylesheet';
+      sheet.href = href;
+      sheet.dataset[data] = attr;
+      document.head.appendChild(sheet);
+    }
+    function changeCSS(cssFile, data, attr) {
+      var oldlink = document.querySelector(data);
+      var newlink = document.createElement("link");
+      newlink.setAttribute("rel", "stylesheet");
+      newlink.setAttribute("href", cssFile);
+      newlink.dataset.prism = attr;
+      document.head.replaceChild(newlink, oldlink);
+    }
+  </script>
+  
+    
+  
+  <script>
+    // control reverse button
+    var reverseDarkList = {
+      dark: 'light',
+      light: 'dark'
+    };
+    var themeColor = {
+      dark: '#1c1c1e',
+      light: '#fff'
+    }
+    // get the data of css prefers-color-scheme
+    var getCssMediaQuery = function() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    // reverse current darkmode setting function
+    var reverseDarkModeSetting = function() {
+      var setting = localStorage.getItem('user-color-scheme');
+      if(reverseDarkList[setting]) {
+        setting = reverseDarkList[setting];
+      } else if(setting === null) {
+        setting = reverseDarkList[getCssMediaQuery()];
+      } else {
+        return;
+      }
+      localStorage.setItem('user-color-scheme', setting);
+      return setting;
+    };
+    // apply current darkmode setting
+  </script>
+  
+    <script>
+      var setDarkmode = function(mode) {
+      var setting = mode || localStorage.getItem('user-color-scheme');
+      if(setting === getCssMediaQuery()) {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else if(reverseDarkList[setting]) {
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
+        document.getElementById('theme-color').content = themeColor[setting];
+        document.getElementById('theme-color').dataset.mode = setting;
+      } else {
+        document.documentElement.removeAttribute('data-user-color-scheme');
+        localStorage.removeItem('user-color-scheme');
+        document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
+        document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
+      }
+    };
+    setDarkmode();
+    </script>
+  
+  
+  
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
+    <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
+  
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
+  
+  
+  
+  
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    <div class="wrapper">
+       
+      <nav class="navbar">
+  <div class="navbar-logo">
+    <a class="navbar-logo-main" href="/">
+      
+        <img 
+          class="navbar-logo-img"
+          width="32"
+          height="32"
+          src="/favicon.jpg" 
+          alt="blog logo">
+      
+      <span class="navbar-logo-dsc">Blog</span>
+      </a>
+  </div>
+  <div class="navbar-menu">
+    
+      <a 
+        href="/" 
+        class="navbar-menu-item">
+        
+          Home
+        
+      </a>
+    
+      <a 
+        href="/archives" 
+        class="navbar-menu-item">
+        
+          Archive
+        
+      </a>
+    
+      <a 
+        href="/tags" 
+        class="navbar-menu-item">
+        
+          Tags
+        
+      </a>
+    
+      <a 
+        href="/categories" 
+        class="navbar-menu-item">
+        
+          Categories
+        
+      </a>
+    
+      <a 
+        href="/about" 
+        class="navbar-menu-item">
+        
+          About
+        
+      </a>
+    
+      <a 
+        href="/links" 
+        class="navbar-menu-item">
+        
+          Friends
+        
+      </a>
+    
+    <button 
+      class="navbar-menu-item darknavbar navbar-menu-btn" 
+      aria-label="Toggle dark mode"
+      id="dark">
+      <i class="iconfont icon-weather"></i>
+    </button>
+    <button 
+      class="navbar-menu-item searchnavbar navbar-menu-btn" 
+      aria-label="Toggle search"
+      id="search">
+      <!-- <i 
+        class="iconfont icon-search" 
+        style="font-size: 1.2rem; font-weight: 400;">
+      </i> -->
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+        class="iconify iconify--ion" width="28" height="28" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="28"
+          d="M256 80a176 176 0 1 0 176 176A176 176 0 0 0 256 80Z"></path>
+        <path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="28"
+          d="M232 160a72 72 0 1 0 72 72a72 72 0 0 0-72-72Z"></path>
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="28"
+          d="M283.64 283.64L336 336"></path>
+      </svg>
+    </button>
+  </div>
+</nav> 
+      
+      <div 
+        id="local-search" 
+        style="display: none">
+        <input
+          class="navbar-menu-item"
+          id="search-input"
+          placeholder="请输入搜索内容..." />
+        <div id="search-content"></div>
+      </div>
+      
+      <div class="section-wrap">
+        <div class="container">
+          <div class="columns">
+            <aside class="left-column">
+              
+              <div class="card card-author">
+                
+  <img 
+    src="/author.ico" 
+    class="author-img"
+    width="88"
+    height="88"
+    alt="author avatar">
+
+<p class="author-name">XLM不是衣服尺码</p>
+<p class="author-description"></p>
+<div class="author-message">
+  <a 
+    class="author-posts-count" 
+    href="/archives">
+    <span>2</span>
+    <span>Posts</span>
+  </a>
+  <a 
+    class="author-categories-count" 
+    href="/categories">
+    <span>1</span>
+    <span>Categories</span>
+  </a>
+  <a 
+    class="author-tags-count" 
+    href="/tags">
+    <span>3</span>
+    <span>Tags</span>
+  </a>
+</div>
+
+              </div>
+               <div class="sticky-tablet">
+  
+  
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="toc-text">面试题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%96%B9%E6%B3%95%E6%94%B9%E5%8F%98%E5%AE%9E%E5%8F%82%E5%80%BC%EF%BC%9A%E4%BC%A0%E5%85%A5%E5%8F%82%E6%95%B0%E5%BA%94%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">1.方法改变实参值：传入参数应为对象类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Python%E6%B1%82%E5%92%8C1-100"><span class="toc-text">2.Python求和1-100</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Java%E5%8D%95%E4%BE%8B"><span class="toc-text">3.Java单例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-Java%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%8F%8D%E8%BD%AC"><span class="toc-text">4.Java字符串的反转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%9F%A5%E8%AF%A2%E8%A1%A8A%E4%B8%ADid%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E5%A4%A7%E4%BA%8E3%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-text">5.查询表A中id出现次数大于3的数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-Java%E4%BA%8C%E5%88%86%E6%95%B0%E6%8D%AE%E6%A3%80%E7%B4%A2%EF%BC%8C%E6%8F%92%E5%85%A5"><span class="toc-text">6.Java二分数据检索，插入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-TCP%E5%92%8CUDP-%E6%B2%A1%E9%97%AE%E8%BF%87%EF%BC%8C%E9%9A%8F%E6%89%8B%E8%AE%B0%E7%9A%84"><span class="toc-text">7.TCP和UDP(没问过，随手记的)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-text">8.常用设计模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84-a-b-c-%E5%88%A9%E7%94%A8hash%E7%AE%97%E6%B3%95%EF%BC%88%E8%87%AA%E5%AE%9A%E4%B9%89hash%E5%87%BD%E6%95%B0%EF%BC%89%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E5%BD%A2%E6%95%B0%E7%BB%84"><span class="toc-text">9.字符数组[a,b,c]利用hash算法（自定义hash函数）转换成整形数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-%E5%88%A9%E7%94%A8%E5%8F%8D%E5%B0%84%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95%E4%B8%AD%E5%85%AC%E5%85%B1%E7%9A%84%E5%AD%97%E6%AE%B5"><span class="toc-text">10.利用反射获取方法中公共的字段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-text">11.快速排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%EF%BC%8C%E4%B8%A4%E4%B8%AA%E5%90%8C%E6%97%B6%E6%89%A7%E8%A1%8C%EF%BC%8C%E6%89%A7%E8%A1%8C%E5%AE%8C%E5%90%8E%EF%BC%8C%E7%AC%AC%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%AF%E5%8A%A8"><span class="toc-text">12.三个线程，两个同时执行，执行完后，第三个线程启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%85%B1%E4%BA%AB%E5%8F%98%E9%87%8F%EF%BC%8C%E6%80%8E%E4%B9%88%E4%BF%9D%E8%AF%81%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-text">13.多个线程访问共享变量，怎么保证安全性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%90%8C%E6%97%B6%E5%88%A0%E9%99%A4"><span class="toc-text">14.Linux查找文件同时删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E5%B0%86java%E5%BA%94%E7%94%A8%E8%AE%BE%E4%B8%BA%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">15.将java应用设为后台启动命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-Java%E7%A8%8B%E5%BA%8F%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E6%96%B0%E7%94%9F%E4%BB%A3%EF%BC%8C%E8%80%81%E7%94%9F%E4%BB%A3%EF%BC%8C%E9%98%B2%E6%AD%A2oom%EF%BC%89"><span class="toc-text">16.Java程序启动命令（新生代，老生代，防止oom）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-%E4%BB%8B%E7%BB%8DMybatis-plus"><span class="toc-text">17.介绍Mybatis plus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-Linux%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE"><span class="toc-text">18.Linux部署项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19-Mysql%E7%9A%84case%E8%AF%AD%E6%B3%95"><span class="toc-text">19.Mysql的case语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20-Mysq%E7%B4%A2%E5%BC%95%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%BC%9A%E5%A4%B1%E6%95%88%E3%80%81%E6%80%8E%E4%B9%88%E5%88%A4%E6%96%AD%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88"><span class="toc-text">20.Mysq索引什么情况会失效、怎么判断索引失效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-%E9%9B%86%E5%90%88%E7%9B%B8%E5%85%B3%E7%9A%84%E6%8E%A5%E5%8F%A3%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB"><span class="toc-text">21.集合相关的接口以及实现类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-Js%E6%80%8E%E4%B9%88%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B5%E9%9D%A2"><span class="toc-text">22.Js怎么初始化页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23-%E6%8E%92%E8%A1%8C%E6%A6%9C%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-text">23.排行榜设计思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#24-%E7%9F%AD%E4%BF%A1%E7%99%BB%E5%BD%95%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="toc-text">24.短信登录怎么实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25-Mysql%E7%9A%84%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B"><span class="toc-text">25.Mysql的执行过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26-Union%E5%92%8Cunion-all"><span class="toc-text">26.Union和union all</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD"><span class="toc-text">27.事务传播</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#28-Api%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%E3%80%81%E6%80%8E%E4%B9%88%E7%BB%99%E7%94%A8%E6%88%B7%E6%8F%8F%E8%BF%B0%E3%80%81%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1%E7%BB%99%E5%88%AB%E4%BA%BA%E4%BD%BF%E7%94%A8%E3%80%81open-api"><span class="toc-text">28.Api设计标准、怎么给用户描述、怎么设计给别人使用、open api</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#29-Arraylist%E5%92%8Clinkedlist%E6%95%B0%E6%8D%AE%E5%BA%95%E5%B1%82%E6%98%AF%E6%80%8E%E4%B9%88%E5%AD%98%E5%82%A8%E7%9A%84"><span class="toc-text">29.Arraylist和linkedlist数据底层是怎么存储的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30-Mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E4%BB%A5%E5%8F%8A%E4%BB%8B%E7%BB%8D"><span class="toc-text">30.Mysql存储引擎以及介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#31-Redis%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%8E%E4%B9%88%E5%B9%B3%E5%9D%87%E5%88%86%E5%B8%83%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE"><span class="toc-text">31.Redis多服务器怎么平均分布存储数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#32-Jdk%E7%89%88%E6%9C%AC%E4%BA%86%E8%A7%A3%E5%8F%8A%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-text">32.Jdk版本了解及新特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33-%E6%8B%89%E5%A7%86%E8%BE%BE%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84stream%E7%9A%84%E6%A8%A1%E5%BC%8F"><span class="toc-text">33.拉姆达表达式的stream的模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34-%E7%BA%BF%E7%A8%8B%E6%8E%A5%E5%8F%A3%E5%92%8C%E5%8C%BA%E5%88%AB"><span class="toc-text">34.线程接口和区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#35-%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E5%AE%9E%E7%8E%B0%E3%80%81synchronized%E5%8F%AF%E4%BB%A5%E5%8A%A0%E5%88%B0%E5%93%AA%E9%87%8C"><span class="toc-text">35.线程同步实现、synchronized可以加到哪里</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36-Spring-boot%E6%B3%A8%E8%A7%A3%E8%A7%A3%E9%87%8A%E5%8F%8A%E7%89%B9%E7%82%B9"><span class="toc-text">36.Spring boot注解解释及特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#37-%E5%92%8Cequles%E6%AF%94%E8%BE%83"><span class="toc-text">37.&#x3D;&#x3D;和equles比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#38-Spring-boot%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-text">38.Spring boot的单元测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#39-Springboot%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">39.Springboot的异常处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#40-%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">40.软件设计生命周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#41-Mysql%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98"><span class="toc-text">41.Mysql性能调优</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#42-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%A0%87%E5%87%86%E3%80%81%E7%9B%AE%E7%9A%84"><span class="toc-text">42.软件测试标准、目的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#43-%E4%BA%8B%E5%8A%A1%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-text">43.事务注解的参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#44-lamda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%B1%BB%E5%9E%8B"><span class="toc-text">44.lamda表达式类型</span></a></li></ol></li></ol></li></ol></li></ol>
+      </div>
+    </article>
+  
+  
+  <article class="card card-content categories-widget">
+    <div class="categories-card">
+  <div class="categories-header">
+    <i 
+      class="iconfont icon-fenlei" 
+      style="padding-right: 2px;">
+    </i>Categories
+  </div>
+  <div class="categories-list">
+    
+      <a href="/categories/Hexo/">
+        <div class="categories-list-item">
+          Hexo
+          <span class="categories-list-item-badge">1</span>
+        </div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  <article class="card card-content tags-widget">
+    <div class="tags-card">
+  <div class="tags-header">
+    <i 
+      class="iconfont icon-biaoqian" 
+      style="padding-right: 2px;">
+    </i>hot tags
+  </div>
+  <div class="tags-list">
+    
+      <a 
+        href="/tags/%E9%9D%A2%E8%AF%95/" 
+        title="面试">
+        <div class="tags-list-item">面试</div>
+      </a>
+    
+      <a 
+        href="/tags/github/" 
+        title="github">
+        <div class="tags-list-item">github</div>
+      </a>
+    
+      <a 
+        href="/tags/Hexo/" 
+        title="Hexo">
+        <div class="tags-list-item">Hexo</div>
+      </a>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+            <main class="main-column">
+              
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      面试ing
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2025-04-11T15:42:08.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2025-04-11</span>
+    </time>
+    
+    
+      <span class="dot"></span>
+      <span>7k words</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/%E9%9D%A2%E8%AF%95/" 
+            class="post-meta-link">
+            面试
+          </a>
+        
+      </div>
+    </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h4 id="1-方法改变实参值：传入参数应为对象类型"><a href="#1-方法改变实参值：传入参数应为对象类型" class="headerlink" title="1.方法改变实参值：传入参数应为对象类型"></a>1.方法改变实参值：传入参数应为对象类型</h4><h4 id="2-Python求和1-100"><a href="#2-Python求和1-100" class="headerlink" title="2.Python求和1-100"></a>2.Python求和1-100</h4><p>result&#x3D;sum(range(1,101))</p>
+<h4 id="3-Java单例"><a href="#3-Java单例" class="headerlink" title="3.Java单例"></a>3.Java单例</h4><pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;<span class="comment">//饿汉式</span></span><br><span class="line">  <span class="comment">// 类加载时就完成了实例化，线程安全</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">Singleton</span> <span class="variable">INSTANCE</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">  / 私有构造函数，防止外部实例化</span><br><span class="line">  <span class="keyword">private</span> <span class="title function_">Singleton</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">  <span class="comment">// 提供全局访问点</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> INSTANCE;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+<pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;<span class="comment">//懒汉式</span></span><br><span class="line">  <span class="comment">// 延迟加载的实例，默认值为null</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line">  <span class="comment">// 私有构造函数，防止外部实例化</span></span><br><span class="line">  <span class="keyword">private</span> <span class="title function_">Singleton</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">  <span class="comment">// 提供全局访问点，但非线程安全</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">  	instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> instance;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+<pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;<span class="comment">//线程安全版本</span></span><br><span class="line">  <span class="comment">// 延迟加载的实例，默认值为null</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;</span><br><span class="line">  <span class="comment">// 私有构造函数，防止外部实例化</span></span><br><span class="line">  <span class="keyword">private</span> <span class="title function_">Singleton</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">  <span class="comment">// 提供全局访问点，方法同步保证线程安全</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Singleton <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line"> 	 instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> instance;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+<pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Singleton</span> &#123;<span class="comment">//双重检查锁</span></span><br><span class="line">  <span class="comment">// volatile确保多线程正确处理instance变量</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> Singleton instance;</span><br><span class="line">  <span class="comment">// 私有构造函数，防止外部实例化</span></span><br><span class="line">  <span class="keyword">private</span> <span class="title function_">Singleton</span><span class="params">()</span> &#123;&#125;</span><br><span class="line">  <span class="comment">// 提供全局访问点，双重检查锁优化性能</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title function_">getInstance</span><span class="params">()</span> &#123;</span><br><span class="line">   <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">     <span class="keyword">synchronized</span> (Singleton.class) &#123;</span><br><span class="line">       <span class="keyword">if</span> (instance == <span class="literal">null</span>) &#123;</span><br><span class="line">         instance = <span class="keyword">new</span> <span class="title class_">Singleton</span>();</span><br><span class="line">       &#125;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> instance;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+
+
+<h4 id="4-Java字符串的反转"><a href="#4-Java字符串的反转" class="headerlink" title="4.Java字符串的反转"></a>4.Java字符串的反转</h4><pre class="highlight"><span class="line">String str2= <span class="keyword">new</span> <span class="title class_">StringBuilder</span>(str1).reverse().toString();</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ReverseString</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">   <span class="type">String</span> <span class="variable">original</span> <span class="operator">=</span> <span class="string">&quot;Hello, World!&quot;</span>;</span><br><span class="line">   <span class="type">char</span>[] charArray = original.toCharArray();</span><br><span class="line">   <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">   <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> charArray.length - <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">     <span class="comment">// 交换字符</span></span><br><span class="line">     <span class="type">char</span> <span class="variable">temp</span> <span class="operator">=</span> charArray[left];</span><br><span class="line">     charArray[left] = charArray[right];</span><br><span class="line">     charArray[right] = temp;</span><br><span class="line">     left++;</span><br><span class="line">     right--;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="type">String</span> <span class="variable">reversed</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(charArray);</span><br><span class="line">   System.out.println(reversed); </span><br><span class="line">  &#125;</span><br><span class="line">&#125;<span class="comment">//若在六行内实现可以for循环中初始化，下标移动</span></span><br></pre>
+
+
+
+<h4 id="5-查询表A中id出现次数大于3的数据"><a href="#5-查询表A中id出现次数大于3的数据" class="headerlink" title="5.查询表A中id出现次数大于3的数据"></a>5.查询表A中id出现次数大于3的数据</h4><pre class="highlight"><span class="line">SELECT id, COUNT(*) as occurrence_count FROM TableA</span><br><span class="line"># GROUP BY id：按id字段对结果进行分组，以便计算每个id的出现次数。 </span><br><span class="line"># HAVING COUNT(\*) &gt; 3：使用HAVING子句来筛选出id出现次数大于3的记录。</span><br></pre>
+
+<h4 id="6-Java二分数据检索，插入"><a href="#6-Java二分数据检索，插入" class="headerlink" title="6.Java二分数据检索，插入"></a>6.Java二分数据检索，插入</h4><pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BinarySearch</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">binarySearch</span><span class="params">(<span class="type">int</span>[] array, <span class="type">int</span> target)</span> &#123;</span><br><span class="line">   <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">   <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> array.length - <span class="number">1</span>;                       </span><br><span class="line">   <span class="keyword">while</span> (left &lt;= right) &#123;</span><br><span class="line">     <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> left + (right - left)/<span class="number">2</span>; <span class="comment">// 防止(left + right)可能导致的溢出</span></span><br><span class="line">     <span class="keyword">if</span> (array[mid] == target) &#123;</span><br><span class="line">       <span class="keyword">return</span> mid; <span class="comment">// 找到目标值，返回索引</span></span><br><span class="line">     &#125; <span class="keyword">else</span> <span class="keyword">if</span> (array[mid] &lt; target) &#123;</span><br><span class="line">       left = mid + <span class="number">1</span>; <span class="comment">// 在右半部分继续查找</span></span><br><span class="line">     &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       right = mid - <span class="number">1</span>; <span class="comment">// 在左半部分继续查找</span></span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> -<span class="number">1</span>; <span class="comment">// 未找到目标值，返回-1</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">   <span class="type">int</span>[] sortedArray = &#123;<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">11</span>, <span class="number">13</span>&#125;;</span><br><span class="line">   <span class="type">int</span> <span class="variable">target</span> <span class="operator">=</span> <span class="number">7</span>;</span><br><span class="line">   <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> binarySearch(sortedArray, target);</span><br><span class="line">   <span class="keyword">if</span> (result != -<span class="number">1</span>) &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot;Found &quot;</span> + target + <span class="string">&quot; at index &quot;</span> + result);</span><br><span class="line">   &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">     System.out.println(target + <span class="string">&quot; not found in the array.&quot;</span>);</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+<pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BinaryInsertion</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">binaryInsert</span><span class="params">(<span class="type">int</span>[] array, <span class="type">int</span> key)</span> &#123;</span><br><span class="line">  <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> <span class="number">0</span>, right = array.length - <span class="number">1</span>;</span><br><span class="line">  <span class="type">int</span> <span class="variable">insertPos</span> <span class="operator">=</span> array.length; <span class="comment">// 默认插入位置为数组末尾，如果二分查找没有找到合适的位置，则插入末尾（但这里我们会找到合适位置并更新它）</span></span><br><span class="line">  <span class="comment">// 二分查找插入位置</span></span><br><span class="line">  <span class="keyword">while</span> (left &lt;= right) &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> left + (right - left) / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span> (array[mid] &gt; key) &#123;</span><br><span class="line">      insertPos = mid; <span class="comment">// 更新插入位置为mid（实际上应该插入mid+1的位置，但这里先记录mid，稍后处理）</span></span><br><span class="line">      right = mid - <span class="number">1</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      left = mid + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 注意：由于我们希望在相等元素之后插入以保持排序稳定性，因此insertPos不需要-1（它已经是mid之后的位置）</span></span><br><span class="line">  <span class="comment">// 但由于数组是从0开始索引的，并且我们是在找到比key大的元素时停止的，所以insertPos实际上是正确的插入点（即第一个大于key的元素的位置）</span></span><br><span class="line">  <span class="comment">// 将数组元素向右移动以腾出空间</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> array.length - <span class="number">1</span>; i &gt;= insertPos; i--) &#123;</span><br><span class="line">    array[i + <span class="number">1</span>] = array[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 插入key</span></span><br><span class="line">  array[insertPos] = key;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">  <span class="type">int</span>[] sortedArray = &#123;<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>&#125;;</span><br><span class="line">  <span class="type">int</span> <span class="variable">keyToInsert</span> <span class="operator">=</span> <span class="number">6</span>;</span><br><span class="line">  System.out.println(<span class="string">&quot;Before insertion: &quot;</span> + Arrays.toString(sortedArray));</span><br><span class="line">  binaryInsert(sortedArray, keyToInsert);</span><br><span class="line">  System.out.println(<span class="string">&quot;After insertion: &quot;</span> + Arrays.toString(sortedArray));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+
+
+<h4 id="7-TCP和UDP-没问过，随手记的"><a href="#7-TCP和UDP-没问过，随手记的" class="headerlink" title="7.TCP和UDP(没问过，随手记的)"></a>7.TCP和UDP(没问过，随手记的)</h4><p>TCP（Transmission Control Protocol，传输控制协议）</p>
+<p>UDP（User Datagram Protocol，用户数据报协议）是两种常用的数据传输协议</p>
+<p>TCP协议的特点</p>
+<ol>
+<li>面向连接：TCP在传输数据之前，需要先建立连接。这种连接是全双工的，即数据可以在两个方向上同时传输。连接建立通过三次握手过程完成，而连接关闭则通过四次挥手过程实现。</li>
+<li>可靠性：TCP通过一系列机制确保数据的可靠传输，包括序号机制、确认应答机制、超时重传机制等。如果发送方在合理的往返时延内未收到接收方的确认应答，则会重传对应的报文段。</li>
+<li>基于字节流：TCP将应用层发送的数据视为无结构的字节流，并按照字节流的方式传输数据。</li>
+<li>流量控制与拥塞控制：TCP通过滑动窗口机制实现流量控制，以防止发送方发送过多的数据导致接收方无法处理。同时，TCP还包含拥塞控制机制，以避免网络拥塞，确保网络资源的合理利用。</li>
+</ol>
+<p>TCP的应用场景：由于TCP提供可靠的数据传输和流量控制机制，因此适用于要求高可靠性的应用，如网页浏览、文件传输、电子邮件等。在这些应用中，数据的完整性和顺序性至关重要。</p>
+<p>UDP协议的特点</p>
+<ol>
+<li>无连接：UDP在传输数据之前不需要建立连接，因此传输速度较快。同时，由于没有连接状态需要维护，UDP的头部开销也较小。</li>
+<li>不可靠性：UDP不提供数据包的重传、错误校验等机制，因此不保证数据的可靠送达。数据包可能会丢失、重复或乱序。</li>
+<li>实时性：由于无需进行握手和确认机制，UDP的传输速度较快，适用于实时性要求较高的场景。</li>
+<li>头部开销小：UDP的头部仅有8个字节，远小于TCP的头部开销。</li>
+</ol>
+<p>UDP的应用场景：UDP则适用于对速度和效率要求更高的环境，如视频流、在线游戏和语音传输等实时应用。这些应用更注重传输速度而不是数据包的完整性，因此可以容忍少量的数据包丢失或乱序。</p>
+<h4 id="8-常用设计模式"><a href="#8-常用设计模式" class="headerlink" title="8.常用设计模式"></a>8.常用设计模式</h4><p>策略模式、简单工厂模式、观察者模式、模板方法模式、适配器模式</p>
+<h4 id="9-字符数组-a-b-c-利用hash算法（自定义hash函数）转换成整形数组"><a href="#9-字符数组-a-b-c-利用hash算法（自定义hash函数）转换成整形数组" class="headerlink" title="9.字符数组[a,b,c]利用hash算法（自定义hash函数）转换成整形数组"></a>9.字符数组[a,b,c]利用hash算法（自定义hash函数）转换成整形数组</h4><pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CustomHash</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">  <span class="type">char</span>[] chars = &#123;<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>&#125;;</span><br><span class="line">  <span class="type">int</span>[] hashes = <span class="keyword">new</span> <span class="title class_">int</span>[chars.length];</span><br><span class="line">  <span class="comment">// 自定义哈希函数：ASCII \ 31 + 固定值</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; chars.length; i++) &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">hash</span> <span class="operator">=</span> chars[i] \* <span class="number">31</span> + <span class="number">7</span>; <span class="comment">// 示例哈希算法</span></span><br><span class="line">    hashes[i] = hash;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> hash : hashes) &#123;</span><br><span class="line">    System.out.print(hash + <span class="string">&quot; &quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// 输出：3014 3045 3076</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+
+
+<h4 id="10-利用反射获取方法中公共的字段"><a href="#10-利用反射获取方法中公共的字段" class="headerlink" title="10.利用反射获取方法中公共的字段"></a>10.利用反射获取方法中公共的字段</h4><pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"> <span class="keyword">try</span> &#123;</span><br><span class="line">   <span class="comment">// 获取ExampleClass的Class对象</span></span><br><span class="line">   Class&lt;?&gt; clazz = ExampleClass.class;</span><br><span class="line">   <span class="comment">// 获取所有字段（包括私有、受保护、公共和包私有）</span></span><br><span class="line">   Field[] fields = clazz.getDeclaredFields();</span><br><span class="line">   <span class="comment">// 过滤出公共字段</span></span><br><span class="line">   System.out.println(<span class="string">&quot;Public fields in &quot;</span> + clazz.getSimpleName() + <span class="string">&quot;:&quot;</span>);</span><br><span class="line">   <span class="keyword">for</span> (Field field : fields) &#123;</span><br><span class="line">     <span class="keyword">if</span> (Modifier.isPublic(field.getModifiers())) &#123;</span><br><span class="line">       System.out.println(<span class="string">&quot;- &quot;</span> + field.getName() + <span class="string">&quot; : &quot;</span> + field.getType().getSimpleName());</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">   e.printStackTrace();</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+<h4 id="11-快速排序"><a href="#11-快速排序" class="headerlink" title="11.快速排序"></a>11.快速排序</h4><pre class="highlight"><span class="line"></span><br></pre>
+
+<h4 id="12-三个线程，两个同时执行，执行完后，第三个线程启动"><a href="#12-三个线程，两个同时执行，执行完后，第三个线程启动" class="headerlink" title="12.三个线程，两个同时执行，执行完后，第三个线程启动"></a>12.三个线程，两个同时执行，执行完后，第三个线程启动</h4><pre class="highlight"><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ThreadSyncExample</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException &#123;</span><br><span class="line">   <span class="comment">// 创建并启动线程1和线程2</span></span><br><span class="line">   <span class="type">Thread</span> <span class="variable">thread1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot;线程1开始执行&quot;</span>);</span><br><span class="line">     <span class="comment">// 模拟耗时操作</span></span><br><span class="line">     <span class="keyword">try</span> &#123; </span><br><span class="line">         Thread.sleep(<span class="number">1000</span>); </span><br><span class="line">         &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">     &#125;</span><br><span class="line">     System.out.println(<span class="string">&quot;线程1执行完成&quot;</span>);</span><br><span class="line">   &#125;);</span><br><span class="line">      </span><br><span class="line">   <span class="type">Thread</span> <span class="variable">thread2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot;线程2开始执行&quot;</span>);</span><br><span class="line">     <span class="comment">// 模拟耗时操作</span></span><br><span class="line">     <span class="keyword">try</span> &#123; Thread.sleep(<span class="number">1500</span>); </span><br><span class="line">         &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">     &#125;</span><br><span class="line">     System.out.println(<span class="string">&quot;线程2执行完成&quot;</span>);</span><br><span class="line">   &#125;);</span><br><span class="line">      </span><br><span class="line">   <span class="comment">// 同时启动前两个线程</span></span><br><span class="line">   thread1.start();</span><br><span class="line">   thread2.start();</span><br><span class="line">      </span><br><span class="line">   <span class="comment">// 等待两个线程都执行完成</span></span><br><span class="line">   thread1.join();</span><br><span class="line">   thread2.join();</span><br><span class="line">      </span><br><span class="line">   <span class="comment">// 创建并启动线程3</span></span><br><span class="line">   <span class="type">Thread</span> <span class="variable">thread3</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Thread</span>(() -&gt; &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot;线程3开始执行&quot;</span>);</span><br><span class="line">     System.out.println(<span class="string">&quot;线程3执行完成&quot;</span>);</span><br><span class="line">   &#125;);</span><br><span class="line">   thread3.start();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+
+<h4 id="13-多个线程访问共享变量，怎么保证安全性"><a href="#13-多个线程访问共享变量，怎么保证安全性" class="headerlink" title="13.多个线程访问共享变量，怎么保证安全性"></a>13.多个线程访问共享变量，怎么保证安全性</h4><p>Java中的AtomicInteger等原子类，利用CAS（Compare and Swap）操作来保证线程安全。然后是无锁数据结构，比如使用线程本地存储（ThreadLocal）来避免共享，或者不可变对象，因为不可变对象的状态无法改变，自然线程安全。</p>
+<h4 id="14-Linux查找文件同时删除"><a href="#14-Linux查找文件同时删除" class="headerlink" title="14.Linux查找文件同时删除"></a>14.Linux查找文件同时删除</h4><p>find命令的基本结构是find [路径] [选项] [操作]。这里的路径是&#x2F;path，用户需要替换成实际目录。接下来是-type f，这应该是指定查找文件类型为普通文件，排除目录等其他类型。-name “temp”是匹配文件名恰好为temp的文件。最后的-delete是执行删除操作。</p>
+<pre class="highlight"><span class="line"><span class="meta prompt_">#</span><span class="language-bash">删除名为 temp 的文件</span></span><br><span class="line">find /path -type f -name &quot;temp&quot; -delete</span><br></pre>
+
+
+
+<h4 id="15-将java应用设为后台启动命令"><a href="#15-将java应用设为后台启动命令" class="headerlink" title="15.将java应用设为后台启动命令"></a>15.将java应用设为后台启动命令</h4><pre class="highlight"><span class="line"><span class="meta prompt_">#</span><span class="language-bash">如果关闭当前会话，程序也会自动结束</span></span><br><span class="line">java -jar myapp.jar &amp;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">在系统中不挂断地运行命令，即使退出终端也不会影响程序的运行。确保在关闭当前会话后，程序依然能继续运行</span></span><br><span class="line">nohup java -jar myapp.jar &amp;</span><br></pre>
+
+
+
+<h4 id="16-Java程序启动命令（新生代，老生代，防止oom）"><a href="#16-Java程序启动命令（新生代，老生代，防止oom）" class="headerlink" title="16.Java程序启动命令（新生代，老生代，防止oom）"></a>16.Java程序启动命令（新生代，老生代，防止oom）</h4><pre class="highlight"><span class="line">java \</span><br><span class="line">-Xms2g -Xmx4g \         # 堆内存初始2GB，最大4GB</span><br><span class="line">-XX:NewSize=1g -XX:MaxNewSize=1g \# 新生代固定1GB</span><br><span class="line">-XX:SurvivorRatio=8 \  # Eden与Survivor区比例8:1:1</span><br><span class="line">-XX:+UseG1GC \          # 使用G1垃圾回收器</span><br><span class="line">-XX:MaxGCPauseMillis=200 \    # 目标最大GC暂停时间200ms</span><br><span class="line">-XX:MetaspaceSize=256m \     # 元空间初始256MB</span><br><span class="line">-XX:MaxMetaspaceSize=512m \    # 元空间最大512MB</span><br><span class="line">-XX:+HeapDumpOnOutOfMemoryError \ # OOM时生成堆转储</span><br><span class="line">-XX:HeapDumpPath=/logs/dump.hprof \# 堆转储文件路径</span><br><span class="line">-jar application.jar</span><br></pre>
+
+<h4 id="17-介绍Mybatis-plus"><a href="#17-介绍Mybatis-plus" class="headerlink" title="17.介绍Mybatis plus"></a>17.介绍Mybatis plus</h4><p>基于 MyBatis 的增强工具包，旨在简化开发、提高效率，同时保留 MyBatis 的全部灵活性。它通过内置通用 Mapper 和  Service，实现了单表 CRUD 操作的零 SQL 编写，配合强大的条件构造器（支持 Lambda  表达式）可避免硬编码字段名。其分页插件与性能分析插件简化了复杂查询与优化，而代码生成器能一键生成实体类、Mapper、Service 及  Controller 层基础代码，大幅提升开发效率。此外，MyBatis Plus 支持 ActiveRecord  模式、自动填充字段（如时间戳）、多租户等企业级特性，并提供了完善的防 SQL  注入机制。其“约定优于配置”的设计理念减少了冗余代码，使开发者更专注于业务逻辑，成为中大型项目中持久层的高效解决方案。</p>
+<h4 id="18-Linux部署项目"><a href="#18-Linux部署项目" class="headerlink" title="18.Linux部署项目"></a>18.Linux部署项目</h4><p>-安装Java环境：</p>
+<p>sudo yum install java-1.8.0-openjdk-devel (对于CentOS&#x2F;RHEL系统)</p>
+<p>-下载并解压Tomcat服务器：</p>
+<p>wget <a target="_blank" rel="noopener" href="http://mirror.bit.edu.cn/apache/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz">http://mirror.bit.edu.cn/apache/tomcat/tomcat-9/v9.0.45/bin/apache-tomcat-9.0.45.tar.gz</a></p>
+<p>tar -zxvf apache-tomcat-9.0.45.tar.gz</p>
+<p>cd apache-tomcat-9.0.45&#x2F;</p>
+<p>-配置Tomcat：</p>
+<p>编辑&#x2F;conf&#x2F;server.xml文件，修改端口号和连接器配置，例如将HTTP连接器端口号改为8080</p>
+<p>sudo nano conf&#x2F;server.xml</p>
+<p>……</p>
+<p>-部署Java项目：</p>
+<p>将你的Java项目的WAR文件复制到Tomcat的&#x2F;webapps目录：<br>sudo cp path&#x2F;to&#x2F;your&#x2F;project.war webapps&#x2F;</p>
+<p>-启动Tomcat服务器：</p>
+<p>.&#x2F;bin&#x2F;startup.sh</p>
+<p>-访问项目：</p>
+<p>在浏览器中输入<a target="_blank" rel="noopener" href="http://your_server_ip:8080/your_project_name%E8%AE%BF%E9%97%AE%E4%BD%A0%E7%9A%84Java%E9%A1%B9%E7%9B%AE%E3%80%82">http://your_server_ip:8080/your_project_name访问你的Java项目。</a></p>
+<h4 id="19-Mysql的case语法"><a href="#19-Mysql的case语法" class="headerlink" title="19.Mysql的case语法"></a>19.Mysql的case语法</h4><pre class="highlight"><span class="line">SELECT </span><br><span class="line">    id,</span><br><span class="line">    name,</span><br><span class="line">    CASE status</span><br><span class="line">        WHEN 1 THEN &#x27;Active&#x27;</span><br><span class="line">        WHEN 0 THEN &#x27;Inactive&#x27;</span><br><span class="line">        ELSE &#x27;Unknown&#x27;</span><br><span class="line">    END AS status_description</span><br><span class="line">FROM </span><br><span class="line">    users;</span><br><span class="line">#-----------------------    </span><br><span class="line">SELECT </span><br><span class="line">    id,</span><br><span class="line">    name,</span><br><span class="line">    CASE </span><br><span class="line">        WHEN age &lt; 18 THEN &#x27;Minor&#x27;</span><br><span class="line">        WHEN age BETWEEN 18 AND 65 THEN &#x27;Adult&#x27;</span><br><span class="line">        ELSE &#x27;Senior&#x27;</span><br><span class="line">    END AS age_group</span><br><span class="line">FROM </span><br><span class="line">    users;</span><br></pre>
+
+<h4 id="20-Mysq索引什么情况会失效、怎么判断索引失效"><a href="#20-Mysq索引什么情况会失效、怎么判断索引失效" class="headerlink" title="20.Mysq索引什么情况会失效、怎么判断索引失效"></a>20.Mysq索引什么情况会失效、怎么判断索引失效</h4><p>常见导致索引失效的场景包括：</p>
+<ol>
+<li><p>对索引字段进行函数或表达式运算</p>
+<p>示例：<code>WHERE YEAR(create_time) = 2023</code><br> 对索引字段 <code>create_time</code> 使用函数 <code>YEAR()</code> 后，索引无法直接生效，需改为 <code>WHERE create_time BETWEEN &#39;2023-01-01&#39; AND &#39;2023-12-31&#39;</code>。</p>
+</li>
+<li><p>隐式类型转换</p>
+<p>示例：索引字段为 <code>INT</code> 类型，查询条件为 <code>WHERE id = &#39;123&#39;</code>（字符串类型）<br> MySQL 会将 <code>&#39;123&#39;</code> 转换为整数 <code>123</code>，导致索引失效。需确保查询条件与字段类型一致。</p>
+</li>
+<li><p>使用 <code>LIKE</code> 模糊查询且通配符在前</p>
+<p>示例：<code>WHERE name LIKE &#39;%abc%&#39;</code><br> 通配符 <code>%</code> 在前会导致全表扫描，无法利用索引。若查询前缀（如 <code>WHERE name LIKE &#39;abc%&#39;</code>），则索引可生效。</p>
+</li>
+<li><p>使用 <code>OR</code> 连接非索引字段</p>
+<p>示例：<code>WHERE id = 123 OR name = &#39;test&#39;</code><br> 若 <code>name</code> 字段无索引，则 <code>OR</code> 条件会触发全表扫描。需确保 <code>OR</code> 两侧字段均有索引。</p>
+</li>
+<li><p>范围查询后字段失效</p>
+<p>示例：<code>WHERE age &gt; 30 AND name = &#39;test&#39;</code><br> 若索引为 <code>(age, name)</code>，范围查询 <code>age &gt; 30</code> 后，<code>name</code> 的索引将失效。</p>
+</li>
+<li><p>查询条件包含 <code>IS NULL</code> 或 <code>IS NOT NULL</code></p>
+<p>示例：<code>WHERE name IS NULL</code><br> 除非索引字段明确支持 <code>NULL</code> 值，否则索引可能失效。</p>
+</li>
+<li><p>不等于（<code>!=</code>）或 <code>NOT IN</code> 查询</p>
+<p>示例：<code>WHERE age != 18</code> 或 <code>WHERE age NOT IN (18, 19)</code><br> 此类查询通常导致全表扫描。</p>
+</li>
+<li><p>低选择性字段索引</p>
+<p>示例：对性别字段（<code>gender</code>）建立索引，但表中男女比例接近 1:1，索引选择性低，优化效果有限。</p>
+</li>
+<li><p>使用 <code>ORDER BY</code> 或 <code>GROUP BY</code> 未遵循索引顺序</p>
+<p>示例：索引为 <code>(a, b)</code>，但查询为 <code>ORDER BY b, a</code>，索引无法完全利用。</p>
+</li>
+<li><p>统计信息未更新</p>
+<p>示例：表中数据大幅更新后，未执行 <code>ANALYZE TABLE</code> 更新统计信息，导致优化器选择次优执行计划。</p>
+</li>
+</ol>
+<h4 id="21-集合相关的接口以及实现类"><a href="#21-集合相关的接口以及实现类" class="headerlink" title="21.集合相关的接口以及实现类"></a>21.集合相关的接口以及实现类</h4><p>Collection 接口体系</p>
+<ol>
+<li>List 接口</li>
+</ol>
+<ul>
+<li>特点：有序、可重复，允许索引访问。</li>
+<li>典型实现类<ul>
+<li>ArrayList：基于动态数组实现，适合随机访问（<code>get(index)</code>），但插入&#x2F;删除效率较低。</li>
+<li>LinkedList：基于双向链表实现，适合频繁插入&#x2F;删除操作，但随机访问效率低。</li>
+<li>Vector：线程安全版本，性能较 ArrayList 低，已被 ArrayList 替代。</li>
+<li>Stack：继承自 Vector，提供栈操作（如 <code>push()</code>、<code>pop()</code>），但已不推荐使用。</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>Set 接口</li>
+</ol>
+<ul>
+<li>特点：无序、不可重复。</li>
+<li>典型实现类<ul>
+<li>HashSet：基于哈希表实现，元素无序，依赖 <code>hashCode()</code> 和 <code>equals()</code> 方法判断重复。</li>
+<li>LinkedHashSet：HashSet 的链表版本，维护插入顺序。</li>
+<li>TreeSet：基于红黑树实现，元素自然排序或通过比较器排序。</li>
+</ul>
+</li>
+</ul>
+<p> Map 接口</p>
+<ul>
+<li>特点：键值对存储，键唯一，值可重复。</li>
+<li>典型实现类<ul>
+<li>HashMap：基于哈希表实现，键无序，允许一个 <code>null</code> 键和多个 <code>null</code> 值。</li>
+<li>LinkedHashMap：HashMap 的链表版本，维护插入顺序或访问顺序。</li>
+<li>TreeMap：基于红黑树实现，键自然排序或通过比较器排序。</li>
+<li>Hashtable：线程安全版本，性能较低，已被 ConcurrentHashMap 替代。</li>
+<li>ConcurrentHashMap：线程安全，支持高并发访问，性能优于 Hashtable。</li>
+</ul>
+</li>
+</ul>
+<h4 id="22-Js怎么初始化页面"><a href="#22-Js怎么初始化页面" class="headerlink" title="22.Js怎么初始化页面"></a>22.Js怎么初始化页面</h4><p>Windows.onload&#x3D;function{}</p>
+<h4 id="23-排行榜设计思路"><a href="#23-排行榜设计思路" class="headerlink" title="23.排行榜设计思路"></a>23.排行榜设计思路</h4><h4 id="24-短信登录怎么实现"><a href="#24-短信登录怎么实现" class="headerlink" title="24.短信登录怎么实现"></a>24.短信登录怎么实现</h4><p>自己生成验证码，调用阿里云api发送给用户、用户输入后确认后与后台的验证码进行匹配</p>
+<h4 id="25-Mysql的执行过程"><a href="#25-Mysql的执行过程" class="headerlink" title="25.Mysql的执行过程"></a>25.Mysql的执行过程</h4><ol>
+<li>连接管理：客户端连接到服务器，连接器处理认证和维持连接。</li>
+<li>查询缓存：缓存查询结果，但可能已经被废弃。</li>
+<li>解析器：进行语法分析，生成解析树。</li>
+<li>预处理器：检查语义，如表是否存在，权限验证。</li>
+<li>优化器：生成执行计划。</li>
+<li>执行器：执行查询，调用存储引擎接口。</li>
+<li>存储引擎：实际读写数据。</li>
+</ol>
+<p> 事务相关的操作可能还涉及到日志模块，比如redo log、undo log和binlog。比如，在更新数据的时候，会先写redo log，再写binlog，最后提交事务的时候确保日志持久化。不过这可能属于写入过程的步骤，查询的话可能不需要这些。</p>
+<h4 id="26-Union和union-all"><a href="#26-Union和union-all" class="headerlink" title="26.Union和union all"></a>26.Union和union all</h4><p>UNION：合并多个查询结果集，并自动去除重复记录，最终返回的结果集是去重后的集合。由于需要去重，数据库引擎必须对结果集进行排序和比较，因此性能较低，尤其是当数据量较大时。</p>
+<p>UNION ALL：合并多个查询结果集，保留所有记录（包括重复记录），最终返回的结果集是原始集合的拼接。直接拼接结果集，无需去重操作，性能更高，适合需要保留重复记录的场景。</p>
+<h4 id="27-事务传播"><a href="#27-事务传播" class="headerlink" title="27.事务传播"></a>27.事务传播</h4><p>当事务方法被另一个事务方法调用时，事务应如何处理</p>
+<table>
+<thead>
+<tr>
+<th>传播行为</th>
+<th>描述</th>
+<th>案例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>REQUIRED</code></td>
+<td>如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新事务。</td>
+<td>默认传播行为，适用于大多数场景。例如，用户下单时，订单服务和库存服务需要共享同一个事务。</td>
+</tr>
+<tr>
+<td><code>REQUIRES_NEW</code></td>
+<td>总是创建一个新事务，并挂起当前事务（如果存在）。</td>
+<td>例如，记录日志时，日志服务需要独立于主业务事务，确保日志始终被记录，即使主业务事务回滚。</td>
+</tr>
+<tr>
+<td><code>SUPPORTS</code></td>
+<td>如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务方式执行。</td>
+<td>适用于可选事务场景。例如，查询用户信息时，如果存在事务则加入，否则直接查询。</td>
+</tr>
+<tr>
+<td><code>NOT_SUPPORTED</code></td>
+<td>以非事务方式执行，并挂起当前事务（如果存在）。</td>
+<td>适用于不需要事务的场景。例如，导出报表时，为了避免事务占用资源，可以选择非事务方式执行。</td>
+</tr>
+<tr>
+<td><code>MANDATORY</code></td>
+<td>如果当前存在事务，则加入该事务；如果当前没有事务，则抛出异常。</td>
+<td>适用于必须依赖外部事务的场景。例如，转账操作中，扣款和入账必须共享同一个事务，否则会导致数据不一致。</td>
+</tr>
+<tr>
+<td><code>NEVER</code></td>
+<td>以非事务方式执行，如果当前存在事务，则抛出异常。</td>
+<td>适用于绝对不能有事务的场景。例如，某些敏感操作（如审计日志）需要确保没有事务干扰。</td>
+</tr>
+<tr>
+<td><code>NESTED</code></td>
+<td>如果当前存在事务，则创建一个嵌套事务；如果当前没有事务，则行为与 <code>REQUIRED</code> 相同。嵌套事务可以独立回滚，而不会影响外部事务。</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>外企面试考察个人逻辑、思考、沟通能力，即使你不会，可以思考出其他的方法，且偏重于基础、技术</p>
+<h4 id="28-Api设计标准、怎么给用户描述、怎么设计给别人使用、open-api"><a href="#28-Api设计标准、怎么给用户描述、怎么设计给别人使用、open-api" class="headerlink" title="28.Api设计标准、怎么给用户描述、怎么设计给别人使用、open api"></a>28.Api设计标准、怎么给用户描述、怎么设计给别人使用、open api</h4><p>API的全称是应用程序编程接口（Application Programming Interface）。它是一组预定义的函数和协议，允许不同的软件应用程序进行交互。API的主要目的是使软件开发者能够使用一些现成的代码，从而简化开发过程，提高效率和安全性（用于实现应用程序之间的数据交互和功能调用）</p>
+<p>URL示例：<code>https://www.example.com/products</code>：访问产品列表页面。</p>
+<p>API示例：获取产品列表：</p>
+<ul>
+<li>URL: <code>https://api.example.com/v1/products</code></li>
+<li>方法: GET</li>
+<li>返回: JSON格式的产品列表</li>
+</ul>
+<p>核心设计原则</p>
+<table>
+<thead>
+<tr>
+<th>原则</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RESTful风格</td>
+<td>使用HTTP方法语义化： <code>GET</code>获取资源，<code>POST</code>创建，<code>PUT</code>更新，<code>DELETE</code>删除</td>
+</tr>
+<tr>
+<td>一致性</td>
+<td>统一的命名规范（全小写+下划线或驼峰）、响应格式、错误处理机制</td>
+</tr>
+<tr>
+<td>无状态性</td>
+<td>每个请求包含完整上下文，不依赖服务器会话状态</td>
+</tr>
+<tr>
+<td>版本控制</td>
+<td>通过URL(<code>/v1/</code>)或Header(<code>Accept: application/vnd.myapi.v1+json</code>)管理版本</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td>强制HTTPS，身份验证（OAuth2&#x2F;JWT），速率限制，输入验证</td>
+</tr>
+<tr>
+<td>HATEOAS</td>
+<td>在响应中包含相关资源链接，引导客户端操作（可选）</td>
+</tr>
+</tbody></table>
+<p>如何向用户描述API</p>
+<p>文档必备要素</p>
+<table>
+<thead>
+<tr>
+<th>组成部分</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>快速开始</td>
+<td>5分钟入门指南，包含调用示例和必要凭证获取方式</td>
+</tr>
+<tr>
+<td>认证说明</td>
+<td>OAuth2流程、API Key获取方式、Token刷新机制</td>
+</tr>
+<tr>
+<td>端点清单</td>
+<td>按功能分类的API列表，包含： - HTTP方法 - URL - 参数说明 - 请求示例</td>
+</tr>
+<tr>
+<td>状态码对照表</td>
+<td>定义所有可能的HTTP状态码和错误码</td>
+</tr>
+<tr>
+<td>SDK支持</td>
+<td>提供主流语言（Python&#x2F;Java&#x2F;JS）的SDK和代码示例</td>
+</tr>
+<tr>
+<td>沙箱环境</td>
+<td>提供测试用的API端点、测试账号和虚拟数据</td>
+</tr>
+</tbody></table>
+<pre class="highlight"><span class="line"><span class="section"># 用户管理API</span></span><br><span class="line"><span class="section">## 获取用户信息</span></span><br><span class="line"><span class="code">`GET /v1/users/&#123;user_id&#125;`</span></span><br><span class="line"><span class="section">### 请求参数</span></span><br><span class="line">| 参数       | 类型     | 必填 | 说明           |</span><br><span class="line">|------------|----------|------|----------------|</span><br><span class="line">| user<span class="emphasis">_id    | string   | 是   | 用户唯一标识    |</span></span><br><span class="line"><span class="emphasis">| fields     | string   | 否   | 返回字段，逗号分隔 |</span></span><br><span class="line"><span class="emphasis">### 示例请求</span></span><br><span class="line"><span class="emphasis">```bash</span></span><br><span class="line"><span class="emphasis">curl -X GET &quot;https://api.example.com/v1/users/123?fields=name,email&quot; \</span></span><br><span class="line"><span class="emphasis">  -H &quot;Authorization: Bearer &#123;token&#125;&quot;</span></span><br></pre>
+
+<pre class="highlight"><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;123&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;John&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;john@example.com&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre>
+
+
+
+<p>推荐工具链</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>工具</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文档生成</td>
+<td>Swagger UI, Redoc, Stoplight</td>
+</tr>
+<tr>
+<td>测试工具</td>
+<td>Postman, Insomnia, Paw</td>
+</tr>
+<tr>
+<td>监控平台</td>
+<td>Datadog, New Relic, Prometheus + Grafana</td>
+</tr>
+<tr>
+<td>网关管理</td>
+<td>Kong, Apigee, AWS API Gateway</td>
+</tr>
+<tr>
+<td>SDK生成</td>
+<td>OpenAPI Generator, Swagger Codegen</td>
+</tr>
+</tbody></table>
+<p>设计Open API的6大原则</p>
+<p>简洁性</p>
+<ul>
+<li>使用直观的URL结构：<code>/v1/users/&#123;id&#125;/orders</code></li>
+<li>避免过度复杂的嵌套参数</li>
+</ul>
+<p>一致性</p>
+<ul>
+<li>统一命名规范（全小写+下划线 或 驼峰命名）</li>
+<li>统一响应格式（如所有成功响应包含<code>data</code>字段）</li>
+</ul>
+<p>安全性</p>
+<pre class="highlight"><span class="line"># 安全方案示例（OpenAPI规范）</span><br><span class="line">components:</span><br><span class="line">  securitySchemes:</span><br><span class="line">    OAuth2:</span><br><span class="line">      type: oauth2</span><br><span class="line">      flows:</span><br><span class="line">        clientCredentials:</span><br><span class="line">          tokenUrl: /oauth/token</span><br><span class="line">          scopes:</span><br><span class="line">            read: 读取权限</span><br><span class="line">            write: 写入权限</span><br></pre>
+
+<p>可扩展性</p>
+<ul>
+<li>通过API版本控制兼容迭代：<code>/v1/users</code> → <code>/v2/users</code></li>
+<li>使用HATEOAS提供资源链接引导</li>
+</ul>
+<p>合规性</p>
+<ul>
+<li>遵守GDPR等数据隐私法规</li>
+<li>明确API使用条款（如每日调用上限）</li>
+</ul>
+<p>Open API 技术实现</p>
+<ol>
+<li>协议选择</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>协议</th>
+<th>适用场景</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>REST</td>
+<td>资源型操作（CRUD）</td>
+<td><code>GET /v1/users</code></td>
+</tr>
+<tr>
+<td>GraphQL</td>
+<td>复杂数据查询（按需获取字段）</td>
+<td>自定义查询结构</td>
+</tr>
+<tr>
+<td>WebSocket</td>
+<td>实时双向通信（如聊天、股票推送）</td>
+<td>实时消息推送</td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li>身份验证方案</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>API Key</td>
+<td>简单易用，适合内部系统</td>
+</tr>
+<tr>
+<td>OAuth2</td>
+<td>行业标准，支持细粒度权限控制（推荐开放生态使用）</td>
+</tr>
+<tr>
+<td>JWT</td>
+<td>无状态Token，适合微服务架构</td>
+</tr>
+</tbody></table>
+<ol start="3">
+<li>限流策略</li>
+</ol>
+<pre class="highlight"><span class="line"><span class="comment"># Nginx限流配置示例</span></span><br><span class="line"><span class="attribute">limit_req_zone</span> <span class="variable">$binary_remote_addr</span> zone=api_limit:<span class="number">10m</span> rate=100r/s;</span><br><span class="line"></span><br><span class="line"><span class="section">location</span> /v1/ &#123;</span><br><span class="line">    <span class="attribute">limit_req</span> zone=api_limit burst=<span class="number">50</span>;</span><br><span class="line">    <span class="attribute">proxy_pass</span> http://api_backend;</span><br><span class="line">&#125;</span><br></pre>
+
+
+
+<h4 id="29-Arraylist和linkedlist数据底层是怎么存储的"><a href="#29-Arraylist和linkedlist数据底层是怎么存储的" class="headerlink" title="29.Arraylist和linkedlist数据底层是怎么存储的"></a>29.Arraylist和linkedlist数据底层是怎么存储的</h4><ol>
+<li>元素在内存中是连续存储的，每个元素占据固定的内存空间。</li>
+</ol>
+<ul>
+<li>节点在内存中是分散存储的，每个节点占用独立的内存空间。</li>
+<li>节点之间通过指针关联，指针存储的是其他节点的内存地址。</li>
+</ul>
+<h4 id="30-Mysql存储引擎以及介绍"><a href="#30-Mysql存储引擎以及介绍" class="headerlink" title="30.Mysql存储引擎以及介绍"></a>30.Mysql存储引擎以及介绍</h4><p>存储引擎是数据库底层用于存储、检索和管理数据的关键组件。不同的存储引擎提供了不同的特性，适用于不同的应用场景。</p>
+<p>-InnoDB</p>
+<ul>
+<li>默认引擎：从MySQL 5.5版本开始，InnoDB成为默认存储引擎。</li>
+<li>特点<ul>
+<li>事务支持：支持ACID（原子性、一致性、隔离性、持久性）事务。</li>
+<li>行级锁定：提高并发性能，减少锁冲突。</li>
+<li>外键约束：支持外键，保证数据完整性。</li>
+<li>崩溃恢复：提供崩溃恢复能力，确保数据一致性。</li>
+<li>MVCC（多版本并发控制）：支持高并发读写。</li>
+</ul>
+</li>
+<li>适用场景<ul>
+<li>需要事务支持的应用（如金融系统、电商系统）。</li>
+<li>高并发读写场景。</li>
+<li>需要数据完整性和一致性的应用。</li>
+</ul>
+</li>
+</ul>
+<p>-MyISAM</p>
+<ul>
+<li><p>特点</p>
+<ul>
+<li>非事务型：不支持事务和外键。</li>
+<li>表级锁定：读写时会对整个表加锁，并发性能较低。</li>
+<li>全文索引：支持全文索引，适合文本搜索。</li>
+<li>高读取性能：对于只读或读多写少的场景，性能优于InnoDB。</li>
+</ul>
+</li>
+<li><p>适用场景</p>
+<ul>
+<li>读多写少的应用（如数据仓库、日志系统）。</li>
+<li>需要全文索引的场景。</li>
+</ul>
+</li>
+</ul>
+<p>-MEMORY</p>
+<ul>
+<li>特点<ul>
+<li>内存存储：数据存储在内存中，读写速度极快。</li>
+<li>表级锁定：并发性能较低。</li>
+<li>数据易失性：服务器重启或崩溃时，数据会丢失。</li>
+<li>固定长度行：不支持可变长度字段（如<code>VARCHAR</code>）。</li>
+</ul>
+</li>
+<li>适用场景<ul>
+<li>临时数据存储（如缓存、会话数据）。</li>
+<li>需要快速读写的临时表。</li>
+</ul>
+</li>
+</ul>
+<p>-CSV</p>
+<ul>
+<li>特点<ul>
+<li>CSV文件存储：数据存储在CSV文件中，便于与其他系统交换数据。</li>
+<li>不支持索引：查询性能较低。</li>
+<li>简单易用：适合小型数据集。</li>
+</ul>
+</li>
+<li>适用场景<ul>
+<li>数据导入导出。</li>
+<li>与其他系统（如Excel）交互。</li>
+</ul>
+</li>
+</ul>
+<p>-ARCHIVE</p>
+<ul>
+<li>特点<ul>
+<li>高压缩比：数据存储高度压缩，节省存储空间。</li>
+<li>只支持插入和选择：不支持更新和删除。</li>
+<li>高写入性能：适合日志归档。</li>
+</ul>
+</li>
+<li>适用场景<ul>
+<li>日志归档和历史数据存储。</li>
+</ul>
+</li>
+</ul>
+<p>-NDB（Cluster）</p>
+<ul>
+<li>特点<ul>
+<li>分布式存储：支持分布式集群，提供高可用性和可扩展性。</li>
+<li>同步复制：数据在多个节点间同步复制，确保数据一致性。</li>
+<li>内存存储：数据主要存储在内存中，读写性能高。</li>
+</ul>
+</li>
+<li>适用场景<ul>
+<li>高可用性和可扩展性要求高的应用（如大型网站、在线游戏）。</li>
+</ul>
+</li>
+</ul>
+<p>-FEDERATED</p>
+<ul>
+<li><p>特点</p>
+<ul>
+<li>联邦存储：允许访问远程MySQL服务器上的表，就像访问本地表一样。</li>
+<li>数据不存储在本地：仅存储表的元数据。</li>
+</ul>
+</li>
+<li><p>适用场景</p>
+<ul>
+<li>分布式数据库系统。</li>
+<li>跨数据库的数据集成。</li>
+</ul>
+</li>
+<li><p>BLACKHOLE</p>
+</li>
+<li><p>特点</p>
+<ul>
+<li>黑洞存储：写入的数据会被丢弃，不存储在任何地方。</li>
+<li>复制功能：常用于主从复制中的中继日志。</li>
+</ul>
+</li>
+<li><p>适用场景</p>
+<ul>
+<li>数据复制的中继。</li>
+<li>测试和开发环境。</li>
+</ul>
+</li>
+</ul>
+<p>-MERGE</p>
+<ul>
+<li>特点<ul>
+<li>表合并：将多个相同的MyISAM表合并为一个逻辑表。</li>
+<li>统一视图：对用户提供一个统一的视图。</li>
+</ul>
+</li>
+<li>适用场景<ul>
+<li>分区表管理。</li>
+<li>历史数据归档。</li>
+</ul>
+</li>
+</ul>
+<p>如何选择存储引擎？</p>
+<ol>
+<li>事务支持：如果需要事务支持，选择InnoDB。</li>
+<li>并发性能：高并发读写场景选择InnoDB，低并发读多写少场景选择MyISAM。</li>
+<li>数据持久性：如果数据需要持久化，避免使用MEMORY引擎。</li>
+<li>特殊需求<ul>
+<li>全文索引：选择MyISAM。</li>
+<li>日志归档：选择ARCHIVE。</li>
+<li>分布式存储：选择NDB。</li>
+</ul>
+</li>
+</ol>
+<h4 id="31-Redis多服务器怎么平均分布存储数据"><a href="#31-Redis多服务器怎么平均分布存储数据" class="headerlink" title="31.Redis多服务器怎么平均分布存储数据"></a>31.Redis多服务器怎么平均分布存储数据</h4><h4 id="32-Jdk版本了解及新特性"><a href="#32-Jdk版本了解及新特性" class="headerlink" title="32.Jdk版本了解及新特性"></a>32.Jdk版本了解及新特性</h4><h4 id="33-拉姆达表达式的stream的模式"><a href="#33-拉姆达表达式的stream的模式" class="headerlink" title="33.拉姆达表达式的stream的模式"></a>33.拉姆达表达式的stream的模式</h4><h4 id="34-线程接口和区别"><a href="#34-线程接口和区别" class="headerlink" title="34.线程接口和区别"></a>34.线程接口和区别</h4><h4 id="35-线程同步实现、synchronized可以加到哪里"><a href="#35-线程同步实现、synchronized可以加到哪里" class="headerlink" title="35.线程同步实现、synchronized可以加到哪里"></a>35.线程同步实现、synchronized可以加到哪里</h4><h4 id="36-Spring-boot注解解释及特点"><a href="#36-Spring-boot注解解释及特点" class="headerlink" title="36.Spring boot注解解释及特点"></a>36.Spring boot注解解释及特点</h4><h4 id="37-和equles比较"><a href="#37-和equles比较" class="headerlink" title="37.&#x3D;&#x3D;和equles比较"></a>37.&#x3D;&#x3D;和equles比较</h4><h4 id="38-Spring-boot的单元测试"><a href="#38-Spring-boot的单元测试" class="headerlink" title="38.Spring boot的单元测试"></a>38.Spring boot的单元测试</h4><h4 id="39-Springboot的异常处理"><a href="#39-Springboot的异常处理" class="headerlink" title="39.Springboot的异常处理"></a>39.Springboot的异常处理</h4><h4 id="40-软件设计生命周期"><a href="#40-软件设计生命周期" class="headerlink" title="40.软件设计生命周期"></a>40.软件设计生命周期</h4><h4 id="41-Mysql性能调优"><a href="#41-Mysql性能调优" class="headerlink" title="41.Mysql性能调优"></a>41.Mysql性能调优</h4><h4 id="42-软件测试标准、目的"><a href="#42-软件测试标准、目的" class="headerlink" title="42.软件测试标准、目的"></a>42.软件测试标准、目的</h4><p>软件测试目的</p>
+<ol>
+<li><p>缺陷发现</p>
+</li>
+<li><ul>
+<li>识别代码、逻辑或设计中的错误，预防上线后故障。</li>
+</ul>
+</li>
+<li><p>需求验证</p>
+</li>
+<li><ul>
+<li>确保软件符合功能与非功能需求（如性能、安全性）。</li>
+</ul>
+</li>
+<li><p>质量提升</p>
+</li>
+<li><ul>
+<li>通过持续测试优化稳定性、用户体验及兼容性。</li>
+</ul>
+</li>
+<li><p>风险控制</p>
+</li>
+<li><ul>
+<li>降低因软件缺陷导致的经济、安全或声誉损失。</li>
+</ul>
+</li>
+<li><p>合规保障</p>
+</li>
+<li><ul>
+<li>满足法规（GDPR、HIPAA）及行业标准（PCI-DSS）。</li>
+</ul>
+</li>
+<li><p>过程改进</p>
+</li>
+<li><ul>
+<li>分析缺陷根源，优化开发流程，减少未来错误。</li>
+</ul>
+</li>
+<li><p>性能评估</p>
+</li>
+<li><ul>
+<li>测试负载、压力下的表现，确保高并发或大数据处理能力。</li>
+</ul>
+</li>
+<li><p>用户信心建立</p>
+</li>
+<li><ul>
+<li>通过全面测试增强客户对产品质量的信任。</li>
+</ul>
+</li>
+</ol>
+<h4 id="43-事务注解的参数"><a href="#43-事务注解的参数" class="headerlink" title="43.事务注解的参数"></a>43.事务注解的参数</h4><h4 id="44-lamda表达式类型"><a href="#44-lamda表达式类型" class="headerlink" title="44.lamda表达式类型"></a>44.lamda表达式类型</h4>
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-warning copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            XLM不是衣服尺码
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="http://example.com/2025/04/11/%E9%9D%A2%E8%AF%95ing/">
+            http://example.com/2025/04/11/%E9%9D%A2%E8%AF%95ing/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+  
+    <div class="nav-item-next">
+      <a 
+        href="/2025/04/08/BlogStart/" 
+        class="nav-link">
+        <div>
+          <div class="nav-label">Next</div>
+          
+            <div class="nav-title">BlogStart </div>
+          
+        </div>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="toc-text">面试题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%96%B9%E6%B3%95%E6%94%B9%E5%8F%98%E5%AE%9E%E5%8F%82%E5%80%BC%EF%BC%9A%E4%BC%A0%E5%85%A5%E5%8F%82%E6%95%B0%E5%BA%94%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">1.方法改变实参值：传入参数应为对象类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Python%E6%B1%82%E5%92%8C1-100"><span class="toc-text">2.Python求和1-100</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Java%E5%8D%95%E4%BE%8B"><span class="toc-text">3.Java单例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-Java%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%8F%8D%E8%BD%AC"><span class="toc-text">4.Java字符串的反转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%9F%A5%E8%AF%A2%E8%A1%A8A%E4%B8%ADid%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E5%A4%A7%E4%BA%8E3%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-text">5.查询表A中id出现次数大于3的数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-Java%E4%BA%8C%E5%88%86%E6%95%B0%E6%8D%AE%E6%A3%80%E7%B4%A2%EF%BC%8C%E6%8F%92%E5%85%A5"><span class="toc-text">6.Java二分数据检索，插入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-TCP%E5%92%8CUDP-%E6%B2%A1%E9%97%AE%E8%BF%87%EF%BC%8C%E9%9A%8F%E6%89%8B%E8%AE%B0%E7%9A%84"><span class="toc-text">7.TCP和UDP(没问过，随手记的)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-text">8.常用设计模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84-a-b-c-%E5%88%A9%E7%94%A8hash%E7%AE%97%E6%B3%95%EF%BC%88%E8%87%AA%E5%AE%9A%E4%B9%89hash%E5%87%BD%E6%95%B0%EF%BC%89%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E5%BD%A2%E6%95%B0%E7%BB%84"><span class="toc-text">9.字符数组[a,b,c]利用hash算法（自定义hash函数）转换成整形数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-%E5%88%A9%E7%94%A8%E5%8F%8D%E5%B0%84%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95%E4%B8%AD%E5%85%AC%E5%85%B1%E7%9A%84%E5%AD%97%E6%AE%B5"><span class="toc-text">10.利用反射获取方法中公共的字段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-text">11.快速排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%EF%BC%8C%E4%B8%A4%E4%B8%AA%E5%90%8C%E6%97%B6%E6%89%A7%E8%A1%8C%EF%BC%8C%E6%89%A7%E8%A1%8C%E5%AE%8C%E5%90%8E%EF%BC%8C%E7%AC%AC%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%AF%E5%8A%A8"><span class="toc-text">12.三个线程，两个同时执行，执行完后，第三个线程启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%85%B1%E4%BA%AB%E5%8F%98%E9%87%8F%EF%BC%8C%E6%80%8E%E4%B9%88%E4%BF%9D%E8%AF%81%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-text">13.多个线程访问共享变量，怎么保证安全性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%90%8C%E6%97%B6%E5%88%A0%E9%99%A4"><span class="toc-text">14.Linux查找文件同时删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E5%B0%86java%E5%BA%94%E7%94%A8%E8%AE%BE%E4%B8%BA%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">15.将java应用设为后台启动命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-Java%E7%A8%8B%E5%BA%8F%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E6%96%B0%E7%94%9F%E4%BB%A3%EF%BC%8C%E8%80%81%E7%94%9F%E4%BB%A3%EF%BC%8C%E9%98%B2%E6%AD%A2oom%EF%BC%89"><span class="toc-text">16.Java程序启动命令（新生代，老生代，防止oom）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-%E4%BB%8B%E7%BB%8DMybatis-plus"><span class="toc-text">17.介绍Mybatis plus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-Linux%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE"><span class="toc-text">18.Linux部署项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19-Mysql%E7%9A%84case%E8%AF%AD%E6%B3%95"><span class="toc-text">19.Mysql的case语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20-Mysq%E7%B4%A2%E5%BC%95%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%BC%9A%E5%A4%B1%E6%95%88%E3%80%81%E6%80%8E%E4%B9%88%E5%88%A4%E6%96%AD%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88"><span class="toc-text">20.Mysq索引什么情况会失效、怎么判断索引失效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-%E9%9B%86%E5%90%88%E7%9B%B8%E5%85%B3%E7%9A%84%E6%8E%A5%E5%8F%A3%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB"><span class="toc-text">21.集合相关的接口以及实现类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-Js%E6%80%8E%E4%B9%88%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B5%E9%9D%A2"><span class="toc-text">22.Js怎么初始化页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23-%E6%8E%92%E8%A1%8C%E6%A6%9C%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-text">23.排行榜设计思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#24-%E7%9F%AD%E4%BF%A1%E7%99%BB%E5%BD%95%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="toc-text">24.短信登录怎么实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25-Mysql%E7%9A%84%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B"><span class="toc-text">25.Mysql的执行过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26-Union%E5%92%8Cunion-all"><span class="toc-text">26.Union和union all</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD"><span class="toc-text">27.事务传播</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#28-Api%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%E3%80%81%E6%80%8E%E4%B9%88%E7%BB%99%E7%94%A8%E6%88%B7%E6%8F%8F%E8%BF%B0%E3%80%81%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1%E7%BB%99%E5%88%AB%E4%BA%BA%E4%BD%BF%E7%94%A8%E3%80%81open-api"><span class="toc-text">28.Api设计标准、怎么给用户描述、怎么设计给别人使用、open api</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#29-Arraylist%E5%92%8Clinkedlist%E6%95%B0%E6%8D%AE%E5%BA%95%E5%B1%82%E6%98%AF%E6%80%8E%E4%B9%88%E5%AD%98%E5%82%A8%E7%9A%84"><span class="toc-text">29.Arraylist和linkedlist数据底层是怎么存储的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30-Mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E4%BB%A5%E5%8F%8A%E4%BB%8B%E7%BB%8D"><span class="toc-text">30.Mysql存储引擎以及介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#31-Redis%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%8E%E4%B9%88%E5%B9%B3%E5%9D%87%E5%88%86%E5%B8%83%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE"><span class="toc-text">31.Redis多服务器怎么平均分布存储数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#32-Jdk%E7%89%88%E6%9C%AC%E4%BA%86%E8%A7%A3%E5%8F%8A%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-text">32.Jdk版本了解及新特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33-%E6%8B%89%E5%A7%86%E8%BE%BE%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84stream%E7%9A%84%E6%A8%A1%E5%BC%8F"><span class="toc-text">33.拉姆达表达式的stream的模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34-%E7%BA%BF%E7%A8%8B%E6%8E%A5%E5%8F%A3%E5%92%8C%E5%8C%BA%E5%88%AB"><span class="toc-text">34.线程接口和区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#35-%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E5%AE%9E%E7%8E%B0%E3%80%81synchronized%E5%8F%AF%E4%BB%A5%E5%8A%A0%E5%88%B0%E5%93%AA%E9%87%8C"><span class="toc-text">35.线程同步实现、synchronized可以加到哪里</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36-Spring-boot%E6%B3%A8%E8%A7%A3%E8%A7%A3%E9%87%8A%E5%8F%8A%E7%89%B9%E7%82%B9"><span class="toc-text">36.Spring boot注解解释及特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#37-%E5%92%8Cequles%E6%AF%94%E8%BE%83"><span class="toc-text">37.&#x3D;&#x3D;和equles比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#38-Spring-boot%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-text">38.Spring boot的单元测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#39-Springboot%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">39.Springboot的异常处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#40-%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">40.软件设计生命周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#41-Mysql%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98"><span class="toc-text">41.Mysql性能调优</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#42-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%A0%87%E5%87%86%E3%80%81%E7%9B%AE%E7%9A%84"><span class="toc-text">42.软件测试标准、目的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#43-%E4%BA%8B%E5%8A%A1%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-text">43.事务注解的参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#44-lamda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%B1%BB%E5%9E%8B"><span class="toc-text">44.lamda表达式类型</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+            </main>
+            <aside class="right-column">
+              <div class="sticky-widescreen">
+  
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>TOC
+</div>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98"><span class="toc-text">面试题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%96%B9%E6%B3%95%E6%94%B9%E5%8F%98%E5%AE%9E%E5%8F%82%E5%80%BC%EF%BC%9A%E4%BC%A0%E5%85%A5%E5%8F%82%E6%95%B0%E5%BA%94%E4%B8%BA%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">1.方法改变实参值：传入参数应为对象类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Python%E6%B1%82%E5%92%8C1-100"><span class="toc-text">2.Python求和1-100</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Java%E5%8D%95%E4%BE%8B"><span class="toc-text">3.Java单例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-Java%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%8F%8D%E8%BD%AC"><span class="toc-text">4.Java字符串的反转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%9F%A5%E8%AF%A2%E8%A1%A8A%E4%B8%ADid%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E5%A4%A7%E4%BA%8E3%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-text">5.查询表A中id出现次数大于3的数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-Java%E4%BA%8C%E5%88%86%E6%95%B0%E6%8D%AE%E6%A3%80%E7%B4%A2%EF%BC%8C%E6%8F%92%E5%85%A5"><span class="toc-text">6.Java二分数据检索，插入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-TCP%E5%92%8CUDP-%E6%B2%A1%E9%97%AE%E8%BF%87%EF%BC%8C%E9%9A%8F%E6%89%8B%E8%AE%B0%E7%9A%84"><span class="toc-text">7.TCP和UDP(没问过，随手记的)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F"><span class="toc-text">8.常用设计模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84-a-b-c-%E5%88%A9%E7%94%A8hash%E7%AE%97%E6%B3%95%EF%BC%88%E8%87%AA%E5%AE%9A%E4%B9%89hash%E5%87%BD%E6%95%B0%EF%BC%89%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E5%BD%A2%E6%95%B0%E7%BB%84"><span class="toc-text">9.字符数组[a,b,c]利用hash算法（自定义hash函数）转换成整形数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-%E5%88%A9%E7%94%A8%E5%8F%8D%E5%B0%84%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95%E4%B8%AD%E5%85%AC%E5%85%B1%E7%9A%84%E5%AD%97%E6%AE%B5"><span class="toc-text">10.利用反射获取方法中公共的字段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-text">11.快速排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12-%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%EF%BC%8C%E4%B8%A4%E4%B8%AA%E5%90%8C%E6%97%B6%E6%89%A7%E8%A1%8C%EF%BC%8C%E6%89%A7%E8%A1%8C%E5%AE%8C%E5%90%8E%EF%BC%8C%E7%AC%AC%E4%B8%89%E4%B8%AA%E7%BA%BF%E7%A8%8B%E5%90%AF%E5%8A%A8"><span class="toc-text">12.三个线程，两个同时执行，执行完后，第三个线程启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-%E5%A4%9A%E4%B8%AA%E7%BA%BF%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%85%B1%E4%BA%AB%E5%8F%98%E9%87%8F%EF%BC%8C%E6%80%8E%E4%B9%88%E4%BF%9D%E8%AF%81%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-text">13.多个线程访问共享变量，怎么保证安全性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-Linux%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E5%90%8C%E6%97%B6%E5%88%A0%E9%99%A4"><span class="toc-text">14.Linux查找文件同时删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E5%B0%86java%E5%BA%94%E7%94%A8%E8%AE%BE%E4%B8%BA%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">15.将java应用设为后台启动命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-Java%E7%A8%8B%E5%BA%8F%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E6%96%B0%E7%94%9F%E4%BB%A3%EF%BC%8C%E8%80%81%E7%94%9F%E4%BB%A3%EF%BC%8C%E9%98%B2%E6%AD%A2oom%EF%BC%89"><span class="toc-text">16.Java程序启动命令（新生代，老生代，防止oom）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-%E4%BB%8B%E7%BB%8DMybatis-plus"><span class="toc-text">17.介绍Mybatis plus</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18-Linux%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE"><span class="toc-text">18.Linux部署项目</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19-Mysql%E7%9A%84case%E8%AF%AD%E6%B3%95"><span class="toc-text">19.Mysql的case语法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20-Mysq%E7%B4%A2%E5%BC%95%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%BC%9A%E5%A4%B1%E6%95%88%E3%80%81%E6%80%8E%E4%B9%88%E5%88%A4%E6%96%AD%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88"><span class="toc-text">20.Mysq索引什么情况会失效、怎么判断索引失效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21-%E9%9B%86%E5%90%88%E7%9B%B8%E5%85%B3%E7%9A%84%E6%8E%A5%E5%8F%A3%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB"><span class="toc-text">21.集合相关的接口以及实现类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-Js%E6%80%8E%E4%B9%88%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B5%E9%9D%A2"><span class="toc-text">22.Js怎么初始化页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23-%E6%8E%92%E8%A1%8C%E6%A6%9C%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF"><span class="toc-text">23.排行榜设计思路</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#24-%E7%9F%AD%E4%BF%A1%E7%99%BB%E5%BD%95%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="toc-text">24.短信登录怎么实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25-Mysql%E7%9A%84%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B"><span class="toc-text">25.Mysql的执行过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26-Union%E5%92%8Cunion-all"><span class="toc-text">26.Union和union all</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#27-%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD"><span class="toc-text">27.事务传播</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#28-Api%E8%AE%BE%E8%AE%A1%E6%A0%87%E5%87%86%E3%80%81%E6%80%8E%E4%B9%88%E7%BB%99%E7%94%A8%E6%88%B7%E6%8F%8F%E8%BF%B0%E3%80%81%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1%E7%BB%99%E5%88%AB%E4%BA%BA%E4%BD%BF%E7%94%A8%E3%80%81open-api"><span class="toc-text">28.Api设计标准、怎么给用户描述、怎么设计给别人使用、open api</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#29-Arraylist%E5%92%8Clinkedlist%E6%95%B0%E6%8D%AE%E5%BA%95%E5%B1%82%E6%98%AF%E6%80%8E%E4%B9%88%E5%AD%98%E5%82%A8%E7%9A%84"><span class="toc-text">29.Arraylist和linkedlist数据底层是怎么存储的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#30-Mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E4%BB%A5%E5%8F%8A%E4%BB%8B%E7%BB%8D"><span class="toc-text">30.Mysql存储引擎以及介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#31-Redis%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%8E%E4%B9%88%E5%B9%B3%E5%9D%87%E5%88%86%E5%B8%83%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE"><span class="toc-text">31.Redis多服务器怎么平均分布存储数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#32-Jdk%E7%89%88%E6%9C%AC%E4%BA%86%E8%A7%A3%E5%8F%8A%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-text">32.Jdk版本了解及新特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#33-%E6%8B%89%E5%A7%86%E8%BE%BE%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84stream%E7%9A%84%E6%A8%A1%E5%BC%8F"><span class="toc-text">33.拉姆达表达式的stream的模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#34-%E7%BA%BF%E7%A8%8B%E6%8E%A5%E5%8F%A3%E5%92%8C%E5%8C%BA%E5%88%AB"><span class="toc-text">34.线程接口和区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#35-%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E5%AE%9E%E7%8E%B0%E3%80%81synchronized%E5%8F%AF%E4%BB%A5%E5%8A%A0%E5%88%B0%E5%93%AA%E9%87%8C"><span class="toc-text">35.线程同步实现、synchronized可以加到哪里</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#36-Spring-boot%E6%B3%A8%E8%A7%A3%E8%A7%A3%E9%87%8A%E5%8F%8A%E7%89%B9%E7%82%B9"><span class="toc-text">36.Spring boot注解解释及特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#37-%E5%92%8Cequles%E6%AF%94%E8%BE%83"><span class="toc-text">37.&#x3D;&#x3D;和equles比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#38-Spring-boot%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-text">38.Spring boot的单元测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#39-Springboot%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">39.Springboot的异常处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#40-%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">40.软件设计生命周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#41-Mysql%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98"><span class="toc-text">41.Mysql性能调优</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#42-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E6%A0%87%E5%87%86%E3%80%81%E7%9B%AE%E7%9A%84"><span class="toc-text">42.软件测试标准、目的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#43-%E4%BA%8B%E5%8A%A1%E6%B3%A8%E8%A7%A3%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-text">43.事务注解的参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#44-lamda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%B1%BB%E5%9E%8B"><span class="toc-text">44.lamda表达式类型</span></a></li></ol></li></ol></li></ol></li></ol>
+    </article>
+  
+  
+  <article class="card card-content">
+    <div class="recent-posts-card">
+  <div class="recent-posts-header">
+    <i 
+      class="iconfont icon-wenzhang_huaban" 
+      style="padding-right: 2px;">
+    </i>Recent Posts
+  </div>
+  <div class="recent-posts-list">
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2025-04-11</div>
+        <a href="/2025/04/11/%E9%9D%A2%E8%AF%95ing/"><div class="recent-posts-item-content">面试ing</div></a>
+      </div>
+    
+      <div class="recent-posts-item">
+        <div class="recent-posts-item-title">2025-04-08</div>
+        <a href="/2025/04/08/BlogStart/"><div class="recent-posts-item-content">BlogStart</div></a>
+      </div>
+    
+  </div>
+</div>
+  </article>
+  
+  
+</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <footer class="footer">
+  <div class="footer-container">
+    <div>
+      <div class="footer-dsc">
+        <span>
+          Copyright ©
+          
+            2020
+          
+          
+                - 
+                2025
+          
+        </span>
+        &nbsp;
+        <a 
+          href="/" 
+          class="footer-link">
+          Blog
+        </a>
+      </div>
+    </div>
+
+    
+      <div class="footer-dsc">
+        
+          Powered by
+          <a 
+            href="https://hexo.io/" 
+            class="footer-link" 
+            target="_blank" 
+            rel="nofollow noopener noreferrer">
+            &nbsp;Hexo
+          </a>
+        
+        
+          <span>&nbsp;|&nbsp;</span>
+        
+        
+          Theme -
+          <a 
+            href="https://github.com/theme-kaze" 
+            class="footer-link" 
+            target="_blank"
+            rel="nofollow noopener noreferrer">
+            &nbsp;Kaze
+          </a>
+        
+      </div>
+    
+    
+    
+    
+</footer>
+ 
+    
+  <a 
+    role="button" 
+    id="scrollbutton" 
+    class="basebutton" 
+    aria-label="回到顶部">
+    <i class="iconfont icon-arrowleft button-icon"></i>
+  </a>
+
+<a 
+  role="button" 
+  id="menubutton"
+  aria-label="menu button"
+  class="basebutton">
+  <i class="iconfont icon-menu button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="popbutton" 
+  class="basebutton" 
+  aria-label="控制中心">
+  <i class="iconfont icon-expand button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="darkbutton" 
+  class="basebutton darkwidget" 
+  aria-label="夜色模式">
+  <i class="iconfont icon-weather button-icon"></i>
+</a>
+<a 
+  role="button" 
+  id="searchbutton" 
+  class="basebutton searchwidget" 
+  aria-label="搜索">
+  <i class="iconfont icon-search button-icon"></i>
+</a> 
+     
+     
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
+     
+     
+    <script src="/js/main.js"></script> 
+     
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
+    
+    <script src="//instant.page/5.1.0" type="module"
+      integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+    
+    
+  </body>
+</html>
